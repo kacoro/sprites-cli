@@ -108,8 +108,7 @@ function readFileList(path, filesList) {
       let imageList = [];
       this.getFileList(path).forEach(item => {
         // var image = imageinfo(fs.readFileSync(item.path + item.filename));
-        var mimeType = !/.(gif|jpg|jpeg|png|gif|jpg|png)$/.test(item)
-        console.log(mimeType)
+        var mimeType = /\.(gif|jpg|jpeg|png|bmp)/.test(item.filename)
         mimeType && imageList.push(item.filename);
       });
       return imageList;
