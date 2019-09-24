@@ -138,7 +138,7 @@ const generation = async form => {
     "meta": {
       "app": "http://www.kacoro.com/",
       "version": "1.0.0",
-      "image": "${outputPath + blankImage.taget}",
+      "image": "${blankImage.taget}",
       "format": "RGBA8888",
       "size": {"w":${blankImage.image.bitmap.width},"h":${blankImage.image.bitmap.height}},
       "scale": "1",
