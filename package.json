@@ -1,0 +1,36 @@
+{
+  "name": "sprites-cli",
+  "version": "1.0.0",
+  "description": "A Sprites Generator.Composite images to Sprites And generate json or css",
+  "main": "index.js",
+  "bin": {
+    "sprites-cli": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kacoro/sprites-cli.git"
+  },
+  "keywords": [
+    "sprites"
+  ],
+  "author": "kacoro <admin@kacoro.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kacoro/sprites-cli/issues"
+  },
+  "homepage": "https://github.com/kacoro/sprites-cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^3.0.1",
+    "csv": "^5.1.3",
+    "fs": "^0.0.1-security",
+    "imageinfo": "^1.0.4",
+    "inquirer": "^7.0.0",
+    "jimp": "^0.8.4",
+    "translator": "^1.9.1"
+  }
+}
