@@ -10,15 +10,6 @@ path = require('path'),
 fs = require("fs"),
 { getFiles } = require('./utils/dir');
 
-program
-  .version("1.0.1")
-  .option("-t, --test [type]", "set source and target directory to ./test/")
-  .option("-s, --set [type]", "set source and target  by user input")
-  .option("-d, --drop [type]", "drop blac background")
-  .option("-p, --padding [value]", "set the padding output, default is 0")
-  .option("-n, --name [value]", "set the output name, default is sprites")
-  .parse(process.argv);
-
 var imgMetadataList = [];
 var maxWidth = 0;
 var maxHeight = 0;
@@ -31,6 +22,16 @@ var blankImage= {
   width:0,
   height:0
 } ;
+
+program
+  .version("1.0.1")
+  .option("-t, --test [type]", "set source and target directory to ./test/")
+  .option("-s, --set [type]", "set source and target  by user input")
+  .option("-d, --drop [type]", "drop blac background")
+  .option("-p, --padding [value]", "set the padding output, default is 0")
+  .option("-n, --name [value]", "set the output name, default is sprites")
+  .parse(process.argv);
+
 const questions = [
   {
     type: "input",
@@ -209,7 +210,7 @@ const generation = async form => {
   );
 };
 
-console.log(program)
+
 if(program.drop == true){
 
 }
@@ -218,7 +219,7 @@ if(program.padding){
 }
 if(program.name){
   targetName = program.name
-  blankImage.traget = targetName + '.png'
+  blankImage.target = program.name + '.png'
 }
 if (program.test == true) { //test的话直接引用
   console.log("test")
