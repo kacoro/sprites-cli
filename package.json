@@ -1,10 +1,10 @@
 {
   "name": "cc-sprites-cli",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A Sprites Generator.Composite images to Sprites And generate json",
   "main": "index.js",
   "bin": {
-    "sprites-cli": "index.js"
+    "cc-sprites-cli": "index.js"
   },
   "scripts": {
     "start": "node index.js",

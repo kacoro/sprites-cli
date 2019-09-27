@@ -8,7 +8,7 @@ npm install -g cc-sprites-cli
 
 ```
 
-# demo
+# script
 ```
 # run
 
@@ -22,6 +22,12 @@ cc-sprites-cli  -s
 
 # drop black backgournd
 cc-sprites-cli  -d
+
+# rename
+cc-sprites-cli  -n sprites
+
+# version
+cc-sprites-cli  -V
 
 ```
 
